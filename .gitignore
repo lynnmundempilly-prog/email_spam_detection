@@ -1,0 +1,72 @@
+# ---------------------------
+
+# Python cache & compiled files
+
+# ---------------------------
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+
+# ---------------------------
+
+# Virtual environment
+
+# ---------------------------
+
+venv/
+.env/
+.env.*
+
+# ---------------------------
+
+# Jupyter / IPython
+
+# ---------------------------
+
+.ipynb_checkpoints/
+
+# ---------------------------
+
+# IDE / Editor settings
+
+# ---------------------------
+
+.vscode/
+.idea/
+
+# ---------------------------
+
+# OS-generated files
+
+# ---------------------------
+
+.DS_Store
+Thumbs.db
+
+# ---------------------------
+
+# Logs & temporary files
+
+# ---------------------------
+
+*.log
+
+# ---------------------------
+
+# ML artifacts (optional but recommended)
+
+# ---------------------------
+
+models/
+*.pkl
+*.joblib
+
+# ---------------------------
+
+# Dataset (OPTIONAL – see note below)
+
+# ---------------------------
+
+ data/spam.csv

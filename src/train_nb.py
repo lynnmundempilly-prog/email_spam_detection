@@ -1,8 +1,11 @@
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
-from data_loader import load_data
-from vectorizer import get_tfidf_features
+
+from src.data_loader import load_data
+from src.vectorizer import get_tfidf_features
+from src.evaluate import evaluate_model
+
 
 df = load_data("data/spam.csv")
 X, _ = get_tfidf_features(df['text'])
@@ -16,4 +19,4 @@ model = MultinomialNB()
 model.fit(X_train, y_train)
 
 y_pred = model.predict(X_test)
-print(classification_report(y_test, y_pred))
+evaluate_model(y_test, y_pred, "Naive Bayes")
